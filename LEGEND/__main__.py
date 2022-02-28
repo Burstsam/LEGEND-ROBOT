@@ -57,8 +57,7 @@ You can find my list of available commands with /help.
 """
 
 SOURCE_STRING = """
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/legendxop/LEGEND-ROBOT)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/legendxop/LEGEND-ROBOT.git)
+⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find Find The repo here [Repo](https://te.legra.ph/file/d10893d91fa49a2956630.jpg)
 """
 
 
@@ -73,7 +72,7 @@ Here is modules:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can be triggered with the following: /, !.\n")
 
-LEGEND_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
+LEGEND_IMG = "https://te.legra.ph/file/94b7a5162d6ce377d2237.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 LEGEND is hosted on one of Heroku's Servers and doesn't require any donations as of now but \
@@ -196,25 +195,25 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text=" 👸 Invite me in your place ",
+                            text="  Invite me in your place ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                      ],
                      [
                         InlineKeyboardButton(
-                            text=" ⚡ Join team x ",
-                            url="https://t.me/teamishere"),
+                            text=" Off Topic Anime Chat ",
+                            url="https://t.me/bestwalefriends"),
                          InlineKeyboardButton(
-                            text=" ❤️ Channel ",
-                             url="https://t.me/hackerget0")        
+                            text=" Network ",
+                             url="https://t.me/Akatsuki_Network")        
                       ],
                       [ 
                         InlineKeyboardButton(
                              text=" ✨ Support ",
                              url="https://t.me/Legend_userbot_support"),
                         InlineKeyboardButton(
-                             text=" 👨‍💻 Creator ",
-                             url="https://t.me/legendx22")
+                             text=" My Husbando/Tadano ",
+                             url="https://t.me/im_the_ownerr")
                     
                     ]]))
     else:
@@ -536,7 +535,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "LEGEND BOT is now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Marin Chan Is Online")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")
